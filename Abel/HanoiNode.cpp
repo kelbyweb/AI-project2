@@ -4,12 +4,16 @@
 
 
 HanoiNode::HanoiNode() {
-    parent = nullptr;
+    parent = NULL;
     IMT = A;
     f = 0;
     g = 0;
     h = 0;
     goalNode = false;
+}
+
+HanoiNode::~HanoiNode(){
+    delete this;
 }
 
 
@@ -38,12 +42,12 @@ bool HanoiNode::isEqual(HanoiNode *node) {
     return equal;
 }
 
-void HanoiNode::setTower(TowerName name, std::deque <int> disks){
+void HanoiNode::setTower(TowerName name, std::deque <int> &disks){
     towers[name].setDisks(disks);
 }
 void HanoiNode::setIllegalMoveTower(TowerName IMT){ this->IMT = IMT; };
 void HanoiNode::setParent(HanoiNode * node){ parent = node; };
-void HanoiNode::setChild(HanoiNode * node){ children.push_back(node); };
+//void HanoiNode::setChild(HanoiNode * node){ children.push_back(node); };
 void HanoiNode::setF(){ f = g + h; };
 void HanoiNode::setG(int g){ this->g = g + 1; };
 void HanoiNode::setH(int h){ this->h = h; };

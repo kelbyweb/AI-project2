@@ -11,7 +11,7 @@ public:
     HanoiTower();
     int getTotal();
     int getTopDisk();
-    std::deque <int> getDisks();
+    std::deque <int>& getDisks();
     void setDisks(std::deque <int> &disks);
     int popTopDisk();
     void pushDisk(int i);

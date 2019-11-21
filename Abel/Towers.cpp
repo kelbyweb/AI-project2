@@ -1,5 +1,4 @@
 #include "Towers.h"
-#include <iostream>
 #include <deque>
 
 HanoiTower::HanoiTower(){ total = 0; };
@@ -8,7 +7,7 @@ int HanoiTower::getTopDisk() {
     return disks[0];
 }
 
-std::deque <int> HanoiTower::getDisks(){
+std::deque <int>& HanoiTower::getDisks(){
     return disks;
 }
 
