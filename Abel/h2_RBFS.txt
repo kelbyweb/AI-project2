@@ -1,0 +1,82 @@
+Which h(n) would you like to see? (h1, h2, h3)
+h2
+Which algorithm should the program use? (A* or RBFS)
+RBFS
+Goal node reached!
+Nodes expanded: 7
+Nodes generated: 21
+Time taken with 3 disks: 2996000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 139264
+Goal node reached!
+Nodes expanded: 15
+Nodes generated: 45
+Time taken with 4 disks: 2992000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 163840
+Goal node reached!
+Nodes expanded: 31
+Nodes generated: 93
+Time taken with 5 disks: 2991000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 290816
+Goal node reached!
+Nodes expanded: 63
+Nodes generated: 189
+Time taken with 6 disks: 5284000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 663552
+Goal node reached!
+Nodes expanded: 127
+Nodes generated: 381
+Time taken with 7 disks: 8344000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 1327104
+Goal node reached!
+Nodes expanded: 255
+Nodes generated: 765
+Time taken with 8 disks: 18719000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 2650112
+Goal node reached!
+Nodes expanded: 511
+Nodes generated: 1533
+Time taken with 9 disks: 115164000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 5283840
+Goal node reached!
+Nodes expanded: 1023
+Nodes generated: 3069
+Time taken with 10 disks: 281988000 nanoseconds
+Total time so far: 0 seconds
+Memory usage for run: 10309632
+Goal node reached!
+Nodes expanded: 2047
+Nodes generated: 6141
+Time taken with 11 disks: 676636000 nanoseconds
+Total time so far: 1 seconds
+Memory usage for run: 20758528
+Goal node reached!
+Nodes expanded: 4095
+Nodes generated: 12285
+Time taken with 12 disks: 2252419000 nanoseconds
+Total time so far: 3 seconds
+Memory usage for run: 42225664
+Goal node reached!
+Nodes expanded: 8191
+Nodes generated: 24573
+Time taken with 13 disks: 8166171000 nanoseconds
+Total time so far: 11 seconds
+Memory usage for run: 84021248
+Goal node reached!
+Nodes expanded: 16383
+Nodes generated: 49149
+Time taken with 14 disks: 32361202000 nanoseconds
+Total time so far: 43 seconds
+Memory usage for run: 168128512
+Goal node reached!
+Nodes expanded: 32767
+Nodes generated: 98301
+Time taken with 15 disks: 146162413000 nanoseconds
+Total time so far: 190 seconds
+Memory usage for run: 336494592
