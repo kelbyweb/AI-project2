@@ -8,8 +8,8 @@
 #include <cmath>
 #include <limits>
 #include <chrono>
-#include <windows.h>
-#include <psapi.h>
+//#include <windows.h>
+//#include <psapi.h>
 #include "HanoiNode.h"
 
 bool compareHanoiNodes(HanoiNode*, HanoiNode*);
@@ -30,8 +30,8 @@ int main() {
     bool inOPEN = false, inCLOSE = false, nEven;
     n%2 ? nEven = false : nEven = true;
     std::string student, algorithm;
-    PROCESS_MEMORY_COUNTERS_EX pmc;
-    SIZE_T memory_start, memory_stop, algorithmMemoryUsage;
+    //PROCESS_MEMORY_COUNTERS_EX pmc;
+    //SIZE_T memory_start, memory_stop, algorithmMemoryUsage;
 
     // User options for h(n) function and algorithm
 //    std::cout << "Enter the number of disks:" << std::endl;
@@ -46,8 +46,8 @@ int main() {
 
     while(total_time < std::chrono::duration_cast<std::chrono::microseconds>(time_limit)) {
 
-        GetProcessMemoryInfo(GetCurrentProcess(), reinterpret_cast<PPROCESS_MEMORY_COUNTERS>(&pmc), sizeof(pmc));
-        memory_start = pmc.WorkingSetSize;
+        //GetProcessMemoryInfo(GetCurrentProcess(), reinterpret_cast<PPROCESS_MEMORY_COUNTERS>(&pmc), sizeof(pmc));
+        //memory_start = pmc.WorkingSetSize;
 
         static int n = 3;
 
@@ -180,12 +180,12 @@ int main() {
             // User input validation
         }
 
-        GetProcessMemoryInfo(GetCurrentProcess(), reinterpret_cast<PPROCESS_MEMORY_COUNTERS>(&pmc), sizeof(pmc));
-        memory_stop = pmc.WorkingSetSize;
+        //GetProcessMemoryInfo(GetCurrentProcess(), reinterpret_cast<PPROCESS_MEMORY_COUNTERS>(&pmc), sizeof(pmc));
+        //memory_stop = pmc.WorkingSetSize;
 
         auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(stop - start);
         total_time += duration;
-        algorithmMemoryUsage = (memory_stop - memory_start);
+       // algorithmMemoryUsage = (memory_stop - memory_start);
 
         OPEN.clear();
         CLOSE.clear();
@@ -203,9 +203,9 @@ int main() {
                   << std::chrono::duration_cast<std::chrono::seconds>(total_time).count()
                   << " seconds" << std::endl;
 
-        std::cout << "Memory usage for run: "
-                  << algorithmMemoryUsage
-                  << std::endl;
+        //std::cout << "Memory usage for run: "
+        //          << algorithmMemoryUsage
+        //          << std::endl;
 
     }
 }
